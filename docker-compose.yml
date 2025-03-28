@@ -1,0 +1,35 @@
+version: '3'
+services:
+  master:
+    build: .
+    hostname: master
+    command: bash -c "cd /app && ./scripts/run.sh"
+    volumes:
+      - ./src:/app/src:ro
+      - ./scripts:/app/scripts:ro
+    networks:
+      - mpi_network
+
+  worker1:
+    build: .
+    hostname: worker1
+    command: bash -c "cd /app && ./scripts/run.sh"
+    volumes:
+      - ./src:/app/src:ro
+      - ./scripts:/app/scripts:ro
+    networks:
+      - mpi_network
+
+  worker2:
+    build: .
+    hostname: worker2
+    command: bash -c "cd /app && ./scripts/run.sh"
+    volumes:
+      - ./src:/app/src:ro
+      - ./scripts:/app/scripts:ro
+    networks:
+      - mpi_network
+
+networks:
+  mpi_network:
+    driver: bridge 
