@@ -44,4 +44,4 @@ Bu proje, modern dağıtık sistemlerin temel prensiplerini göstermekte ve fark
 ## Performans Karşılaştırması
 ![Performans Karşılaştırması](karsılaştırma.png)
 ## Youtube Video
-[YouTube video linkinizi buraya ekleyin] 
+[[YouTube video linkinizi buraya ekleyin] ](https://youtu.be/k2RzS3ZswTc)
